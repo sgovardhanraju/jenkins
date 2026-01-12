@@ -14,6 +14,7 @@ pipeline {
                     sh """
                         echo "building" 
                         echo $COURSE
+                        env
                         """
                 }
             }
