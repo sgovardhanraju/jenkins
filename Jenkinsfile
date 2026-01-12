@@ -21,7 +21,7 @@ pipeline {
             }
         }
     }
-    posts {
+    post {
         always {
             echo " I will always say Hello again!"
         }
