@@ -8,7 +8,7 @@ pipeline {
         COURSE = "jenkins"
     }
     options {
-//       timeout(time: 10, unit: 'SECONDS')
+      timeout(time: 10, unit: 'MINUTES')
         disableConcurrentBuilds()
     }
 
@@ -27,8 +27,8 @@ pipeline {
                         sh """
                             echo "Building"
                             echo $COURSE
- //                           sleep 10
- //                           env
+                           sleep 10
+                           env
                         """
                     }
                 }
